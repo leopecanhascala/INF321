@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de produtos</title>
+        <link rel="stylesheet" href="Parte2.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de produtos</h1>
+        </header>
+        <main>
+            <section id="cadastro">
+                <form method="post" action="/cad">
+                    <label>Nome do produto:</label><br>
+                    <input type="text" name="nome"><br>
+
+                    <label>Imagem do produto:</label><br>
+                    <input type="file" name="imagem"><br>
+
+                    <label>Preço do produto:</label><br>
+                    <input type="number" step="0.01" name="preco"><br>
+
+                    <label>Link com informações do produto:</label><br>
+                    <input type="text" name="info"><br>
+
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p><a href="Parte2.html"><button class="botao-cad">Voltar para a página principal</button></a></p>
+            <p>Vegi Games © 2026</p>
+        </footer>
+    </body>
+</html>
