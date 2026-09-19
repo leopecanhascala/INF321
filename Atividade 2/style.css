@@ -1,0 +1,71 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: lightcyan;
+    background-color: darkslategray;
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+    height: 200px;
+}
+
+.produtos{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prod{
+    background-color: lightcyan;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightcyan;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+}
+
+.prod a{
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.preco{
+    color: darkslategray;
+}
+
+.botao-cad{
+    border-radius: 500px;
+    width: 25%;
+    height: 25%;
+}
+
+.container-cad{
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid lightcyan;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px lightcyan;
+}
+
+.container-cad input{
+    margin: 10px;
+}
+
+@media (max-width: 839px){
+    .produtos{
+        display: block;
+        justify-content: center;
+    }
+
+    .prod {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .botao-cad{
+        width: 80%;
+    }
+}
