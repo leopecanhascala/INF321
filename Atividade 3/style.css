@@ -1,0 +1,161 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: lightcyan;
+    background-color: darkslategray;
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+    height: 200px;
+}
+
+.produtos{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prod{
+    background-color: lightcyan;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightcyan;
+    width: 25%;
+    height: 25%;
+    padding: 15px;
+}
+
+.prod:hover {
+    box-shadow: 0 0 20px lightcyan;    
+}
+
+.prod a{
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.preco{
+    color: darkslategray;
+}
+
+.botao-cad{
+    border-radius: 500px;
+    width: 25%;
+    height: 25%;
+}
+
+.container-cad{
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid lightcyan;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px lightcyan;
+}
+
+.container-cad input{
+    margin: 10px;
+}
+
+@media (max-width: 839px){
+    .produtos{
+        display: block;
+        justify-content: center;
+    }
+
+    .prod {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .botao-cad{
+        width: 80%;
+    }
+}
+
+.botao-pesquisar {
+    border-radius: 50px;
+    background-color: lightcyan;
+    height: 24px;
+}
+
+.botao-pesquisar:hover {
+    box-shadow: 0 0 10px lightcyan;
+}
+
+#campo-pesquisa {
+    border-radius: 50px;
+    height: 24px;
+    width: 300px;
+}
+
+#campo-pesquisa:hover {
+    box-shadow: 0 0 10px lightcyan;
+}
+
+.bt-comprar {
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+}
+
+.bt-comprar:hover {
+    background-color: #999;
+}
+
+.carrinho {
+    padding-bottom: 30px;
+}
+
+#bt-carrinho {
+    border-radius: 50px;
+    background-color: lightcyan;
+    height: 24px;
+}
+
+#bt-carrinho:hover {
+    box-shadow: 0 0 10px lightcyan;
+}
+
+
+
+
+/* Classes do JavaScript */
+
+.prod-adicionado {
+    background-color: darkred;
+    color: white;
+}
+
+.pulsate {
+    box-shadow: 0 0 15px lightcyan;
+}
+
+.esconde {
+    display: none;
+}
+
+.mensagem-carrinho-add {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #90ff97;
+    color: #4b8a4f;
+    border: 2px solid #4b8a4f;
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.mensagem-carrinho-remove {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9ad8e;
+    color: #724e40;
+    border: 2px solid #724e40;
+    width: 400px;
+    height: 20px;
+    border-radius: 10px;
+}
