@@ -118,8 +118,30 @@ img{
     box-shadow: 0 0 10px lightcyan;
 }
 
+.contato {
+    color: darkslategray;
+    padding: 20px;
+    margin: 2% 10%;
+    background-color: lightcyan;
+    border-radius: 10px;
+}
 
+.contato div {
+    margin-bottom: 20px;
+}
 
+.campo-contato {
+    display: inline-block;
+}
+
+.campo-obrigatorio {
+    border: 1px solid red;
+}
+
+#div-erro {
+    color: red;
+    font-size: 0.8rem;
+}
 
 /* Classes do JavaScript */
 
