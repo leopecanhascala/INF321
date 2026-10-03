@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Vegi Games</h1>
+            </div>
+        </header>
+        <main>
+            <section>
+                <p class="info-principal">
+                    Bem vindo à loja oficial Vegi Games, onde você encontrará as melhores oportunidades de videogames do mercado!
+                </p>
+            </section>
+            <section>
+                <h2>Produtos disponíveis</h2>
+                <div class="div-pesquisa">
+                    <form id="form-pesquisa">
+                        <input id="campo-pesquisa" name="pesquisa" type=" text" placeholder="Pesquise por um produto...">
+                        <button class="botao-pesquisar">Pesquisar</button>
+                    </form>
+                </div>
+            </section>
+            <div class="produtos">
+                <div class="prod" id="ps5">
+                    <img src="ps5.png">
+                    <a href="https://www.playstation.com/pt-br/ps5/"><h3 class="prod-nome-ps5">PlayStation 5</h3></a>
+                    <p class="preco">R$ 4399,90</p>
+                    <a href="https://www.playstation.com/pt-br/ps5/"><button>Ver detalhes</button></a>
+                    <button class="bt-comprar" id="bt-comprar-ps5">Comprar</button>
+                </div>
+                <div class="prod" id="xbox">
+                    <img src="xbox.png">
+                    <a href="https://www.xbox.com/pt-BR/consoles/xbox-series-x"><h3 class="prod-nome-xbox">Xbox Series X</h3></a>
+                    <p class="preco">R$ 5299,90</p>
+                    <a href="https://www.xbox.com/pt-BR/consoles/xbox-series-x"><button>Ver detalhes</button></a>
+                    <button class="bt-comprar" id="bt-comprar-xbox">Comprar</button>
+                </div>
+                <div class="prod" id="wii">
+                    <img src="wii.png">
+                    <a href="https://www.mercadolivre.com.br/wii-rvl-001-usa-512mb-standard-cor-branco-excelente-recondicionado/p/MLB2014104236?pdp_filters=item_id%3AMLB7370656712&from=gshop&matt_tool=61921241&matt_word=&matt_source=google&matt_campaign_id=22090354535&matt_ad_group_id=193694065327&matt_match_type=&matt_network=g&matt_device=c&matt_creative=787871579246&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735125422&matt_product_id=MLB2014104236-product&matt_product_partition_id=2496656095838&matt_target_id=pla-2496656095838&cq_src=google_ads&cq_cmp=22090354535&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22090354535&gbraid=0AAAAAD93qcCP2fOwUQLxU6kDPedBfQMBq&gclid=Cj0KCQjw2OnUBhC2ARIsACKyfaHqRdEvTPEdRBOXAl4Ujsl--BTjCVZh88mWEa2ZRlcwLSmmZAAocmoaAprnEALw_wcB"><h3 class="prod-nome-wii">Nintendo Wii</h3></a>
+                    <p class="preco">R$ 499,90</p>
+                    <a href="https://www.mercadolivre.com.br/wii-rvl-001-usa-512mb-standard-cor-branco-excelente-recondicionado/p/MLB2014104236?pdp_filters=item_id%3AMLB7370656712&from=gshop&matt_tool=61921241&matt_word=&matt_source=google&matt_campaign_id=22090354535&matt_ad_group_id=193694065327&matt_match_type=&matt_network=g&matt_device=c&matt_creative=787871579246&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735125422&matt_product_id=MLB2014104236-product&matt_product_partition_id=2496656095838&matt_target_id=pla-2496656095838&cq_src=google_ads&cq_cmp=22090354535&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22090354535&gbraid=0AAAAAD93qcCP2fOwUQLxU6kDPedBfQMBq&gclid=Cj0KCQjw2OnUBhC2ARIsACKyfaHqRdEvTPEdRBOXAl4Ujsl--BTjCVZh88mWEa2ZRlcwLSmmZAAocmoaAprnEALw_wcB"><button>Ver detalhes</button></a>
+                    <button class="bt-comprar" id="bt-comprar-wii">Comprar</button>
+                </div>
+                <div class="esconde" id="mensagem-carrinho-vazio">
+                    <p>Nenhum item corresponde à pesquisa.</p>
+                </div>
+            </div>
+            <div class="carrinho">
+                <a href="carrinho.html"><button id="bt-carrinho">Carrinho</button></a>
+            </div>
+            <div id="mensagem-carrinho" class="esconde">
+
+            </div>
+            <section>
+                <div class="contato">
+                    <h2>Entre em contato</h2>
+                    <form id="form-contato">
+                        <div id="div-nome">
+                            <label>Nome:</label>
+                            <input name="nome" type="text" class="campo-contato" id="nome" placeholder="Digite seu nome...">
+                        </div>
+                        <div id="div-email">
+                            <label>E-mail:</label>
+                            <input name="email" type="email" class="campo-contato" id="email" placeholder="exemplo@email.com">
+                        </div>
+                        <div id="div-mensagem">
+                            <label>Mensagem:</label>
+                            <textarea name="mensagem" class="campo-contato" id="mensagem" placeholder="Digite uma mensagem..."></textarea>
+                        </div>
+                        <div id="div-erro" class="esconde">
+                            <p>Preencha os campos obrigatórios para enviar o formulário.</p>
+                        </div>
+                        <button id="bt-enviar-contato">Enviar</button>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <a href="form.html"><button class="botao-cad"><h2>Cadastrar produtos</h2></button></a>
+            </section>
+        </main>
+        <footer>
+            <p>Vegi Games © 2026</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
